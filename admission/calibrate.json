@@ -1,0 +1,379 @@
+{
+    "form" : "admission",
+    "etapas_mvp" : [
+        { "nombre" : "descubrimiento", "pregunta_clave" : "¿Qué problema existe? Se explora el contexto, el usuario y su dolor." },
+        { "nombre" : "definición", "pregunta_clave" : "¿Cuál es el problema exacto que vamos a resolver? Se sintetiza lo encontrado en descubrimiento." },
+        { "nombre" : "ideación", "pregunta_clave" : "¿Qué soluciones posibles existen para ese problema definido? Generación de ideas y selección de la más viable." },
+        { "nombre" : "prototipado", "pregunta_clave" : "¿Cómo luciría el producto? Hacer wireframes, maquetas, mockups, flujos en Figma, incluso un “clickable demo” que parece app pero sin backend."},
+        { "nombre" : "construcción", "pregunta_clave" : "¿Qué es lo mínimo que funciona? Desarrollo del MVP con código, base de datos, integración mínima." },
+        { "nombre" : "prueba", "pregunta_clave" : "¿Funciona nuestra solución? Validamos el MVP con usuarios reales, recogemos feedback y verificamos los criterios de aceptación." },
+        { "nombre" : "presentación", "pregunta_clave" : "¿Cómo demostramos el valor de la solución? Comunicamos el problema, la solución y el impacto del MVP de forma clara y concisa." }
+    ],
+    "roles_mvp" : [
+        { "nombre" : "Business Analyst (Product)", "acronimo" : "BA" },
+        { "nombre" : "Software Developer (Engineering)", "acronimo" : "DEV" },
+        { "nombre" : "Testing (Quality Control)", "acronimo" : "QC" }        
+    ],
+    "no_evaluado" : [ "section01", "section02", "section03", "section08", "section09" ],
+    "evaluado" : [
+        { "section04" : [
+                {
+                    "pregunta" : "Cuéntanos un poco más de ti. Hobbies, sueños, aspectos personales. Este espacio es para ti, recuerda, queremos conocerte y saber sobre tu proceso de formación",
+                    "habilidades_buscadas" : "autoconocimiento, madurez, solucion de problemas, proyeccion, creatividad, curiosidad, proposición",
+                    "banderas_rojas" : "confusion de a qué dedicarse laboralmente en la vida, inseguridad respecto a los talentos, no tener razones sólidas para estudiar lo que estudió"
+                },
+                {
+                    "pregunta" : "¿Conoces a alguien cercano (familiar o amigo) que se gane la vida en tecnología (desarrollador, tester, analista, diseñador)?",
+                    "habilidades_buscadas" : "red de apoyo emocional y si es posible de conocimiento respecto a cómo ganarse la vida en tecnología",
+                    "banderas_rojas" : "no entender la pregunta ni desarrollar una respuesta, ausencia de una red de apoyo familiar o amistades"
+                },
+                {
+                    "pregunta" : "¿Cuántas horas (aproximadas) dedicas al día para apropiar tu formación POR TU PROPIA CUENTA?",
+                    "habilidades_buscadas" : "proactividad, amor por el aprendizaje, curiosidad, interés en la formación",
+                    "banderas_rojas" : "no tener un esfuerzo por cuenta propia para aprender fuera del aula."
+                }
+            ]
+        },
+        { "section05" : [
+                {
+                    "pregunta" : "¿Cuál es el experimento más raro que has hecho usando un computador o un teléfono móvil?",
+                    "habilidades_buscadas" : "creatividad, curiosidad, proposición, experimentacion, ensayo y error",
+                    "banderas_rojas" : "miedo de dañar algo, respuestas vagas o poco descriptivas"
+                },
+                {
+                    "pregunta" : "De casualidad, ¿tienes alguna certificación internacional en tecnología? ¿Cuál(es)?",
+                    "habilidades_buscadas" : "curiosidad, proyección laboral, conocimiento de opciones disponibles de certificación",
+                    "banderas_rojas" : "no es problema no tener una certificación, es no interesarse o proyectarse con estas herramientas"
+                },
+                {
+                    "pregunta" : "Escribe por favor tu usuario de Github. Queremos leer el código que has escrito en tu etapa de formación",
+                    "habilidades_buscadas" : "conocimiento de Git, uso de repositorios de código, desarrollo de software colaborativo",
+                    "banderas_rojas" : "no saber qué es GitHub ni mostrar interés alguno siendo una herramienta tan universal en este momento"
+                },
+                {
+                    "pregunta" : "¿Has estado alguna vez en una competencia de programación? En caso de que sí cuéntanos el mayor aprendizaje de dicha experiencia",
+                    "habilidades_buscadas" : "entender la dinámica de mostrar habilidades a la par de otros aprendices",
+                    "banderas_rojas" : "miedo, no emocionarse ante la posibilidad de aprender"
+                },
+                {
+                    "pregunta" : "Con el auge de usar ChatGPT, Claude, Gemini, DeepSeek, Grok, Mistral, Copilot y otras IA generativas ¿Cuál es el prompt más complejo que has hecho? ¿Has hecho algún jailbreak, prompt injection, prompt leaking?",
+                    "habilidades_buscadas" : "prompt engineering, curiosidad, interés de actualizar conocimientos",
+                    "banderas_rojas" : "no conocer los LLM mencionados, no haber experimentado con prompts"
+                }
+            ]
+        },
+        { "section06" : [
+                {
+                    "pregunta" : "Pega acá el texto que te dio QUILIANO",
+                    "habilidades_buscadas" : "interactuar con asistentes de IA y extraer una cadena de resultado",
+                    "banderas_rojas" : "Que la cadena esté incorrectamente formada, es un JSON codificado en Base64, que empieza similar a QUILIANO|eyJHZW5lcmFsIjp7Im5vbWJyZV9hcHJlbmRp..."
+                },
+                {
+                    "pregunta" : "Pega acá el texto que te dio MAGNUS",
+                    "habilidades_buscadas" : "interactuar con asistentes de IA y extraer una cadena de resultado",
+                    "banderas_rojas" : "Que la cadena esté incorrectamente formada, es un JSON codificado en Base64, que empieza similar a MAGNUS|eyJHZW5lcmFsIjp7Im5hbWUiOiJKb2huIERvZ..."
+                }
+            ]
+        },
+        { "section07" : [
+                {
+                    "pregunta" : "¿Te animarías a presentarte en inglés si tuvieras la oportunidad? Algo corto, 30 segundos, un minuto...",
+                    "habilidades_buscadas" : "expresión en inglés, proactividad, curiosidad, sobreponerse al temor",
+                    "banderas_rojas" : "miedo al fracaso"
+                },
+                {
+                    "pregunta" : "Has una lista de las ÚLTIMAS 5 palabras que has aprendido en inglés",
+                    "habilidades_buscadas" : "expresión en inglés, proactividad, curiosidad, exploración de esta lengua",
+                    "banderas_rojas" : "ninguna palabra o menos de cinco palabras"
+                },
+                {
+                    "pregunta" : "¿Cuál sería tu nivel de inglés según el marco común europeo (CEF)?",
+                    "habilidades_buscadas" : "autorreflexion, autoconocimiento",
+                    "banderas_rojas" : "no saber autoevaluar el nivel de inglés"
+                },
+                {
+                    "pregunta" : "Based on the previous text, describe as many challenges as you can regarding expectations of the AI era that demands more and more trustworthy solutions",
+                    "habilidades_buscadas" : "comprensión de lectura en inglés, pensamiento crítico, análisis del entorno vital",
+                    "banderas_rojas" : "respuestas demasiado elaboradas, sin errores ortográficos, como sacadas de un traductor o de una IA"
+                }
+            ] 
+        }
+    ],
+    "memes" : [
+        {
+            "nombre_archivo" : "01.jpeg",
+            "three_amigos_objetivo" : "ALL",
+            "pregunta_implicita_reflexiva" : "¿qué nos hace humanos, diferentes a las máquinas?",
+            "habilidades_buscadas" : "creatividad, curiosidad, proposición",
+            "banderas_rojas" : "solo describir el apego al teléfono sin ir más allá de las oportunidades que se están perdiendo en esas vidas"
+        },
+        {
+            "nombre_archivo" : "02.JPG",
+            "three_amigos_objetivo" : "ALL",
+            "pregunta_implicita_reflexiva" : "¿qué tanta disciplina tienes con tus deberes?",
+            "habilidades_buscadas" : "esfuerzo, compromis, enfoque",
+            "banderas_rojas" : "dificultad para esforzarse en alcanzar una meta propuesta y de enfocarse"
+        },
+        {
+            "nombre_archivo" : "03.jpeg",
+            "three_amigos_objetivo" : "DEV",
+            "pregunta_implicita_reflexiva" : "¿cómo me iría en una entrevista en una Big Tech?",
+            "habilidades_buscadas" : "curiosidad, uso de IA en la programación",
+            "banderas_rojas" : "ver la IA como una amenaza u obstáculo para el trabajo de desarrollador"
+        },
+        {
+            "nombre_archivo" : "04.jpeg",
+            "three_amigos_objetivo" : "DEV",
+            "pregunta_implicita_reflexiva" : "¿el código que puedo liberar a producción es de buena calidad?",
+            "habilidades_buscadas" : "uso responsable de IA, calidad del código",
+            "banderas_rojas" : "no tomarse en serio el software de mala calidad en producción"
+        },
+        {
+            "nombre_archivo" : "05.jpeg",
+            "three_amigos_objetivo" : "DEV",
+            "pregunta_implicita_reflexiva" : "¿qué es la deuda técnica y cuál es mi postura frente a ella?",
+            "habilidades_buscadas" : "uso responsable de IA, calidad del código",
+            "banderas_rojas" : "no saber qué es deuda técnica ni hacerse responsable de ello"
+        },
+        {
+            "nombre_archivo" : "06.png",
+            "three_amigos_objetivo" : "BA",
+            "pregunta_implicita_reflexiva" : "¿qué tan bien sé especificar un producto digital?",
+            "habilidades_buscadas" : "entendimiento del nivel de detalle de especificar software",
+            "banderas_rojas" : "no entender cómo funciona el dar instrucciones a una IA"
+        },
+        {
+            "nombre_archivo" : "07.jpeg",
+            "three_amigos_objetivo" : "DEV",
+            "pregunta_implicita_reflexiva" : "¿qué tan bien me sé comunicar con máquinas y humanos?",
+            "habilidades_buscadas" : "entender qué es un prompt, entender una distribución normal (Gauss)",
+            "banderas_rojas" : "burlarse simplemente. no entender cómo evoluciona la madurez de un desarrollador"
+        },
+        {
+            "nombre_archivo" : "08.jpeg",
+            "three_amigos_objetivo" : "BA",
+            "pregunta_implicita_reflexiva" : "¿por qué en todos lados se está hablando de IA?",
+            "habilidades_buscadas" : "pensamiento crítico, funcionamiento de las empresas y el marketing",
+            "banderas_rojas" : "no hacer un análisis de contexto del mensaje de la IA desde las empresas"
+        },
+        {
+            "nombre_archivo" : "09.JPG",
+            "three_amigos_objetivo" : "DEV",
+            "pregunta_implicita_reflexiva" : "¿cómo es mi uso actual de la IA para escribir código?",
+            "habilidades_buscadas" : "lectura en inglés, contraste entre la realidad y los mitos",
+            "banderas_rojas" : "no entender el contraste entre el mito de la IA y la dinámica real"
+        },
+        {
+            "nombre_archivo" : "10.JPG",
+            "three_amigos_objetivo" : "ALL",
+            "pregunta_implicita_reflexiva" : "¿qué tan bueno es mi nivel de inglés?",
+            "habilidades_buscadas" : "reflexión sobre el nivel actual de inglés y voluntad de mejorarlo",
+            "banderas_rojas" : "no entender la importancia del inglés para acceder a mejores oportunidades"
+        },
+        {
+            "nombre_archivo" : "11.jpeg",
+            "three_amigos_objetivo" : "ALL",
+            "pregunta_implicita_reflexiva" : "¿qué objetivos estoy postergando iniciar?",
+            "habilidades_buscadas" : "reflexión sobre objetivos de vida, de carrera, postergados",
+            "banderas_rojas" : "entender el mensaje hacia otras personas y no algo aplicable hacia sí mismo(a)"
+        },
+        {
+            "nombre_archivo" : "12.jpeg",
+            "three_amigos_objetivo" : "DEV",
+            "pregunta_implicita_reflexiva" : "¿qué tanto me complico o hago la fácil al desarrollar una solución?",
+            "habilidades_buscadas" : "balance en el uso de herramientas, describir lo que es sobre-ingeniería",
+            "banderas_rojas" : "limitarse a decir que no entiende las herramientas descritas en la imagen o identificar la escena de los olímipicos sin interpretar más allá"
+        },
+        {
+            "nombre_archivo" : "13.jpeg",
+            "three_amigos_objetivo" : "QC",
+            "pregunta_implicita_reflexiva" : "¿qué tanto aporto para ayudar a construir software con calidad?",
+            "habilidades_buscadas" : "entendimiento de qué es una prueba unitaria y lo que significa removerlos de un codebase",
+            "banderas_rojas" : "no saber qué es una prueba unitaria ni una test suite"
+        },
+        {
+            "nombre_archivo" : "14.JPG",
+            "three_amigos_objetivo" : "DEV",
+            "pregunta_implicita_reflexiva" : "¿sé lo que es un árbol y cómo desarrollarlo?",
+            "habilidades_buscadas" : "estructuras de datos, solución de problemas con árboles",
+            "banderas_rojas" : "no entender el concepto de árbol como estructura de datos"
+        },
+        {
+            "nombre_archivo" : "15.JPG",
+            "three_amigos_objetivo" : "DEV",
+            "pregunta_implicita_reflexiva" : "¿cómo ajusto estilos CSS en una página?",
+            "habilidades_buscadas" : "CSS, ajustar estilos en web",
+            "banderas_rojas" : "no entender el código de margin negativo"
+        },
+        {
+            "nombre_archivo" : "16.jpeg",
+            "three_amigos_objetivo" : "ALL",
+            "pregunta_implicita_reflexiva" : "¿en qué momento un chat con una IA es demasiado largo?",
+            "habilidades_buscadas" : "ventana de contexto, embeddings, deterioro del contexto en una IA",
+            "banderas_rojas" : "no entender el inglés, ni el chiste, ni haber experimentado el deterioro de un chat con IA"
+        },
+        {
+            "nombre_archivo" : "17.JPG",
+            "three_amigos_objetivo" : "ALL",
+            "pregunta_implicita_reflexiva" : "¿cómo le explicarle a un usuario que hay cambios que no son tan fáciles?",
+            "habilidades_buscadas" : "entender qué es deuda técnica, criterio de lo dificil que es especificar y modificar un software",
+            "banderas_rojas" : "no haber experimentado la dificultad de recibir requerimientos de un cliente en un software"
+        },
+        {
+            "nombre_archivo" : "18.png",
+            "three_amigos_objetivo" : "DEV",
+            "pregunta_implicita_reflexiva" : "¿qué tantos cambios habrán en ese pull request?",
+            "habilidades_buscadas" : "entender el control de código fuente, un pull request, el code review",
+            "banderas_rojas" : "no entender la imagen"
+        },
+        {
+            "nombre_archivo" : "19.JPG",
+            "three_amigos_objetivo" : "ALL",
+            "pregunta_implicita_reflexiva" : "¿acaso la IA no se supone que nos ayuda a ser mejores, qué pasó?",
+            "habilidades_buscadas" : "lectura en inglés, contraste entre la realidad y los mitos",
+            "banderas_rojas" : "no pensar críticamente en cómo la IA hay que implementarla adecuadamente"
+        },
+        {
+            "nombre_archivo" : "20.jpeg",
+            "three_amigos_objetivo" : "ALL",
+            "pregunta_implicita_reflexiva" : "¿qué de esto debo proponerme aprender para encajar en el mercado laboral del futuro?",
+            "habilidades_buscadas" : "lectura en inglés, pensamiento crítico, autoconocimiento y autorreflexión",
+            "banderas_rojas" : "no entender la imagen ni autoreconocerse en las habilidades allí descritas"
+        },
+        {
+            "nombre_archivo" : "21.jpeg",
+            "three_amigos_objetivo" : "BA",
+            "pregunta_implicita_reflexiva" : "¿si tuviera que implementar IA en alguna empresa cómo lo haría?",
+            "habilidades_buscadas" : "pensamiento crítico, funcionamiento de las empresas y cómo propongo soluciones",
+            "banderas_rojas" : "no analizar en detalle el proceso descrito en la hoja ni reflexionar en ello"
+        }
+    ],
+    "habilidades" : [
+        {
+            "etapa" : "descubrimiento",
+            "three_amigos_lider" : "BA",
+            "NSCL" : "220501092",
+            "competencia" : "Especificación de Requisitos del Software",
+            "descripcion" : "Establecer los requisitos de una solución de software de acuerdo con estándares y procedimientos técnicos"
+        },
+        {
+            "etapa" : "definición",
+            "three_amigos_lider" : "BA",
+            "NSCL" : "220501093",
+            "competencia" : "Análisis de la Especificación de Requisitos del Software",
+            "descripcion" : "Evaluar requisitos de la solución de software de acuerdo con metodologías de análisis y estándares"
+        },
+        {
+            "etapa" : "ideación",
+            "three_amigos_lider" : "BA",
+            "NSCL" : "220501094",
+            "competencia" : "Elaboración de la Propuesta Técnica del Software",
+            "descripcion" : "Estructurar propuesta técnica de servicio de tecnología de la información según requisitos técnicos y normativa"
+        },
+        {
+            "etapa" : "prototipado",
+            "three_amigos_lider" : "DEV",
+            "NSCL" : "220501095",
+            "competencia" : "Modelado de los Artefactos del Software",
+            "descripcion" : "Diseñar la solución de software de acuerdo con procedimientos y requisitos técnicos"
+        },
+        {
+            "etapa" : "construcción",
+            "three_amigos_lider" : "DEV",
+            "NSCL" : "220501096",
+            "competencia" : "Construcción del Software",
+            "descripcion" : "Desarrollar la solución de software de acuerdo con el diseño y metodologías de desarrollo"
+        },
+        {
+            "etapa" : "construcción",
+            "three_amigos_lider" : "DEV",
+            "NSCL" : "220501097",
+            "competencia" : "Implantación del Software",
+            "descripcion" : "Implementar la solución de software de acuerdo con los requisitos de operación y modelos de referencia"
+        },
+        {
+            "etapa" : "prueba",
+            "three_amigos_lider" : "QC",
+            "NSCL" : "220501098",
+            "competencia" : "Adopción de Buenas Prácticas en el Proceso de Desarrollo de Software",
+            "descripcion" : "Controlar la calidad del servicio de software de acuerdo con los estándares técnicos"
+        },
+        {
+            "etapa" : "ideación",
+            "three_amigos_lider" : "BA",
+            "NSCL" : "220601501",
+            "competencia" : "Protección para la Salud y el Medio Ambiente (SST y Medio Ambiente)",
+            "descripcion" : "Aplicar prácticas de protección ambiental, seguridad y salud en el trabajo de acuerdo con las políticas organizacionales y la normatividad"
+        },
+        {
+            "etapa" : "presentación",
+            "three_amigos_lider" : "BA",
+            "NSCL" : "240201524",
+            "competencia" : "Comunicación Efectiva",
+            "descripcion" : "Desarrollar procesos de comunicación eficaces y efectivos, teniendo en cuenta situaciones de orden social, personal y productivo"
+        },
+        {
+            "etapa" : "ideación",
+            "three_amigos_lider" : "BA",
+            "NSCL" : "210201501",
+            "competencia" : "Derechos Fundamentales del Trabajo (Derechos Laborales)",
+            "descripcion" : "Ejercer los derechos fundamentales del trabajo de acuerdo al reconocimiento de la dignidad"
+        },
+        {
+            "etapa" : "descubrimiento",
+            "three_amigos_lider" : "BA",
+            "NSCL" : "240201526",
+            "competencia" : "Ética para la Construcción de una Cultura de Paz (Ética y Cultura de Paz)",
+            "descripcion" : "Interactuar en el contexto productivo y social de acuerdo con principios éticos para la construcción de una cultura de paz"
+        },
+        {
+            "etapa" : "descubrimiento",
+            "three_amigos_lider" : "BA",
+            "NSCL" : "240201525",
+            "competencia" : "Cultura Emprendedora y Empresarial (Emprendimiento)",
+            "descripcion" : "Gestionar procesos propios de la cultura emprendedora y empresarial de acuerdo con el perfil personal y los requerimientos de los contextos productivo y social"
+        },
+        {
+            "etapa" : "descubrimiento",
+            "three_amigos_lider" : "BA",
+            "NSCL" : "240201064",
+            "competencia" : "Investigación",
+            "descripcion" : "Orientar investigación formativa según referentes técnicos"
+        },
+        {
+            "etapa" : "prototipado",
+            "three_amigos_lider" : "DEV",
+            "NSCL" : "240201517",
+            "competencia" : "Matemáticas (Razonamiento Cuantitativo)",
+            "descripcion" : "Razonar cuantitativamente frente a situaciones susceptibles de ser abordadas de manera matemática en contextos laborales, sociales y personales"
+        },
+        {
+            "etapa" : "prototipado",
+            "three_amigos_lider" : "DEV",
+            "NSCL" : "220201501",
+            "competencia" : "Ciencias Naturales (Física)",
+            "descripcion" : "Esta competencia busca que se apliquen conocimientos de las ciencias naturales de acuerdo con situaciones del contexto productivo y social. Incluye identificar los principios y leyes de la física para solucionar problemas"
+        },        
+        {
+            "etapa" : "descubrimiento",
+            "three_amigos_lider" : "ALL",
+            "NSCL" : "220501046",
+            "competencia" : "TIC (Gestión de la Información con TIC)",
+            "descripcion" : "Utilizar herramientas informáticas de acuerdo con necesidades de manejo de información"
+        },
+        {
+            "etapa" : "presentación",
+            "three_amigos_lider" : "ALL",
+            "NSCL" : "240202501",
+            "competencia" : "Inglés (Inglés Profesional)",
+            "descripcion" : "Interactuar en lengua inglesa de forma oral y escrita dentro de contextos sociales y laborales según los criterios establecidos por el Marco Común Europeo de Referencia para las Lenguas"
+        },
+        {
+            "etapa" : "descubrimiento",
+            "three_amigos_lider" : "ALL",
+            "NSCL" : "230101507",
+            "competencia" : "Actividad Física y hábitos de vida saludable",
+            "descripcion" : "El objetivo de esta competencia es generar hábitos saludables de vida mediante la aplicación de programas de actividad física en los contextos productivo y social"
+        }
+    ]
+}

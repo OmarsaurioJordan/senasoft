@@ -26,4 +26,4 @@ Andrew Torba
 Published by Gab AI Inc. 2025.
 Introduction: pp 1-2
 
-## Based on the previous text, describe as many challenges as you can regarding expectations of the AI era that demands more and more trustworthy solutions.
+## Based on the previous text, describe as many challenges as you can regarding expectations of the AI era that demands more and more trustworthy solutions

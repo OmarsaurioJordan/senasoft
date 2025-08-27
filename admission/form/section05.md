@@ -17,13 +17,15 @@ Contiene material recopilado de internet. Créditos a quien corresponda.
 
 ## ¿Cuál es el experimento más raro que has hecho usando un computador o un teléfono móvil?
 
+## De casualidad, ¿tienes alguna certificación internacional en tecnología? ¿Cuál(es)?
+
 Ejemplos: AWS, Microsoft, Cisco, Oracle...
 
-## Escribe por favor tu usuario de Github. Queremos leer el código que has escrito en tu etapa de formación.
+## Escribe por favor tu usuario de Github. Queremos leer el código que has escrito en tu etapa de formación
 
-## ¿Has estado alguna vez en una competencia de programación? En caso de que sí cuéntanos el mayor aprendizaje de dicha experiencia.
+## ¿Has estado alguna vez en una competencia de programación? En caso de que sí cuéntanos el mayor aprendizaje de dicha experiencia
 
-## Con el auge de usar ChatGPT, Claude, Gemini, DeepSeek, Grok, Mistral, Copilot y otras IA generativas:
+## Con el auge de usar ChatGPT, Claude, Gemini, DeepSeek, Grok, Mistral, Copilot y otras IA generativas
 
 ¿Cuál es el prompt más complejo que has hecho?
 
